@@ -48,7 +48,11 @@ body::before {
     padding-bottom: 60px;      /* extra bottom space */
 }
 
-
+#page3 {
+    height: 100%;              /* match .book height */
+    max-height: 500px;         /* limit height to the book's height */
+    overflow-y: auto !important; /* enable vertical scrolling */
+}
 #page6 {
     height: 100%;              /* match .book height */
     max-height: 500px;         /* limit height to the book's height */
@@ -310,3 +314,4 @@ document.getElementById('leaveBtn').addEventListener('click', () => {
 
 </body>
 </html>
+
