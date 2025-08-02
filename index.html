@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dear Bhavya ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Pacifico&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f8;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255, 100, 120, 0.15) 0%,
+        rgba(255, 100, 120, 0.15) 1%,
+        transparent 1%,
+        transparent 20%
+    ),
+    repeating-linear-gradient(
+        90deg,
+        rgba(255, 100, 120, 0.15) 0%,
+        rgba(255, 100, 120, 0.15) 10%,
+        transparent 10%,
+        transparent 20%
+    );
+    z-index: -2;
+}
+#page6 {
+    height: 650px; /* increase height */
+    padding-bottom: 60px; /* extra space for text */
+    overflow-y: auto; /* in case content is still long */
+}
+#page1, #page2, #page3, #page4, #page5, #page6, #page7 
+{
+ 
+    overflow-y: auto; /* in case content is still long */
+}
+#page7 {
+    height: 650px; /* increase height */
+    padding-bottom: 60px; /* extra space for text */
+    overflow-y: auto; /* in case content is still long */
+}
+#page3 {
+    height: 650px; /* increase height */
+    padding-bottom: 60px; /* extra space for text */
+    overflow-y: auto; /* in case content is still long */
+}
+body::after {
+    content: "soooooooooooooorrrrrrrrrrrrryyyyyyyyyyyyyyyy soooooooooooooorrrrrrrrrrrrryyyyyyyyyyyyyyyy soooooooooooooorrrrrrrrrrrrryyyyyyyyyyyyyyyy";
+    font-size: 28px;
+    font-weight: bold;
+    color: rgba(255, 50, 80, 0.15);
+    position: fixed;
+    top: 0; left: 0;
+    width: 200%;
+    height: 200%;
+    white-space: pre-wrap;
+    line-height: 2.5;
+    transform: rotate(-25deg);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.book {
+    width: 90%;
+    max-width: 700px;
+    height: 500px;
+    perspective: 2000px;
+    position: relative;		
+    margin-bottom:30px;
+}
+
+.page {
+    height: 100%;
+    position: absolute;
+    margin-bottom:30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255, 100, 120, 0.06) 0%,
+        rgba(255, 100, 120, 0.06) 1%,
+        transparent 1%,
+        transparent 20%
+    ),
+    repeating-linear-gradient(
+        90deg,
+        rgba(255, 100, 120, 0.06) 0%,
+        rgba(255, 100, 120, 0.06) 10%,
+        transparent 10%,
+        transparent 20%
+    );
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    overflow: hidden;
+    padding: 40px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    transform-origin: left;
+    transition: transform 0.6s ease-in-out;
+}
+
+.page.hidden {
+    display: none;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #e75480;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+button {
+    background: #e75480;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #d43d69;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+.no-btn {
+    background: #555;
+    color: white;
+    position: absolute;
+    animation: bounce 0.4s ease;
+    width: 90px;
+}
+
+.final-img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+    .book {
+        height: auto;
+        min-height: 500px;
+    }
+    .page {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="book" id="book">
+
+    <!-- Page 1 -->
+    <div class="page" id="page1">
+        <h1>ha to have sambhad</h1>
+        <p>
+            ik mne khbr che you want to let go past and ama past ni kay j vaat nathi........... page ferav (flip the page)
+        </p>
+        <button onclick="flipPage()">Flip Page ➡️</button>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="page hidden" id="page2">
+        <h1>read this</h1>
+        <p>
+            pela to mgj saro hoy tyare j joje okay and promise me ke vachti vakhate e tu khali ne khali vachis and kay j react ny kr okay and pls yr gussa ma n joje ho bv mehnat lagi che
+        </p>
+        <div id="gameArea" style="position: relative; height: 220px; margin-top: 20px; ">
+            <button id="promiseBtn">Promise Me 😁</button>
+            <button id="noBtn" class="no-btn" style="margin-left:5px;">NO</button>
+        </div>
+    </div>
+
+    <!-- Page 3 -->
+    <div class="page hidden" id="page3">
+        <h1>helllooo</h1>
+        <p>
+            ha to sun ik i messed up mne khbr j hti pele thi hu keto pn ke because of this behaviour kaik avu thase j and te mne LAKH VAKHAT tokyo samjavyo. last aam jo joye to 1 year to but das ek mahina thi maru aamne aam j htu pachi tu pn ketlu sahan kr and hu hto je samjto j noto. tu je krs e brbr j krs and hu hasta hasta bhogvu chu. bhul koni?? MARI but motu kon?? YOU to yr nano samji ne pls pls maaf kri de evu hoy to khijay le maja ave to ekadi khechi le pn pls maaf kri de. te je vastu sahan kri ena mate tne hu page padu to pn e vastu ni maafi nthi but agar sakya hoy to .....🥺🥺
+        </p>
+        <button onclick="flipPage()">Keep Reading ➡️</button>
+        <button id="leaveBtn" style="background:#ff5555;">Leave</button>
+    </div>
+
+    
+
+    <!-- Page 5 -->
+    <div class="page hidden" id="page5">
+        <h1>hji patyu nthi vach</h1>
+        <p>
+            mne noti khbr how to keep people happy hu mari khushi ma tari happiness to bhuli j gyo maro ek frnd jene tu oadkhas yash bf of tanvi tu eno jo ne to akho green flag koi di tanvi ne kai j rok tok n kre and em j keto bhai ene gme em krva devay and i also wanted to be the same but I FAILED me LAST CHANCE magyo hto tya pn me lap kri i didnt knew how to keep a you happy hu tne j sachvi ny sakto to agad jata biji ne su sachvis hve regret thay che but kaam nu su ?? 
+        </p>
+        <button onclick="flipPage()">Flip Page ➡️</button>
+    </div>
+
+    <!-- Page 6 -->
+    <div class="page hidden" id="page6">
+        <h1>hji che kham</h1>
+        <p>
+           yr aa msg no pachad no e maro khali kay j motive nthi bs mne man thyu etle me kidhu ek surprise apu khbr ny tne gmse ke ny ke ny and i dont want to be a person in your life jene tu just formality mate bolav and me aa kidhu etle tu jarak hurt thai hois but meaning e che ke mne ghanu sikhva malyu ana pr thi tari life ma bija pn person che toy hu badhu mara pr j leto and e rete tne unintentionally control krto like tari life ma bija koi che j ny i am the only one but e j ne badha ke apna uper ave tyare khbr pde me tne ghani hurt kri che but hve ny kru.... and yeah restart is the only the single way left and hu kyay past ny lavu vache but sun ne force nthi krto but jarak time joy che attention joy che once a day ik tu busy cho but still try and mne ADAT NTHI PADTI and you are free to behave like you want hu ny kv ke tu aam kr tem kr like if you love someone than tamare ene dekhadvu pde khali keva thi n thi n chale pls bhavya maaf kri de ek immature childish boy samji ne 👉👈...... and at last i want to say take care of yourself
+        </p>
+        <button onclick="flipPage()">Final Page ➡️</button>
+    </div>
+<!-- Page 7 -->
+<div class="page hidden" id="page7">
+    <img src="aaa.jpg" alt="Holding Hands" class="final-img">
+    <p style="text-align:center;">and mine toooooo 😂😂🤟</p>
+</div>
+
+
+
+</div>
+
+<script>
+let currentPage = 1;
+const totalPages = 7;
+
+function flipPage(toPage = null) {
+    const current = document.getElementById(`page${currentPage}`);
+    current.style.transform = "rotateY(-180deg)";
+    setTimeout(() => {
+        current.classList.add('hidden');
+        current.style.transform = "rotateY(0deg)";
+        currentPage = toPage ? toPage : currentPage + 1;
+        if (currentPage <= totalPages) {
+            const next = document.getElementById(`page${currentPage}`);
+            next.classList.remove('hidden');
+		
+            next.style.transform = "rotateY(0deg)";
+        }
+    }, 500);
+}
+
+// NO button runaway effect
+const gameArea = document.getElementById('gameArea');
+const noBtn = document.getElementById('noBtn');
+noBtn.addEventListener('mouseover', () => {
+    const areaRect = gameArea.getBoundingClientRect();
+    const btnRect = noBtn.getBoundingClientRect();
+    const maxX = areaRect.width - btnRect.width - 10;
+    const maxY = areaRect.height - btnRect.height - 10;
+    const newX = Math.random() * maxX;
+    const newY = Math.random() * maxY;
+    noBtn.style.left = `${newX}px`;
+    noBtn.style.top = `${newY}px`;
+    noBtn.style.position = 'absolute';
+    noBtn.style.animation = 'bounce 0.4s ease';
+    setTimeout(() => noBtn.style.animation = '', 400);
+});
+
+// Buttons
+document.getElementById('promiseBtn').addEventListener('click', () => {
+    flipPage(3); // Go to Page 3
+});
+
+noBtn.addEventListener('click', () => {
+    flipPage(3); // Go to Page 3
+});
+
+document.getElementById('leaveBtn').addEventListener('click', () => {
+    alert("hehehehe now escape hahahahaaa 😂");
+    flipPage(4); // Go to No Escape
+});
+</script>
+
+</body>
+</html>
