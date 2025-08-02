@@ -41,17 +41,27 @@ body::before {
     );
     z-index: -2;
 }
-#page6 {
-    height: 650px; /* increase height */
-    padding-bottom: 60px; /* extra space for text */
-    overflow-y: auto; /* in case content is still long */
+#page5 {
+    height: 100%;              /* match .book height */
+    max-height: 500px;         /* limit height to the book's height */
+    overflow-y: auto !important; /* enable vertical scrolling */
+    padding-bottom: 60px;      /* extra bottom space */
 }
+
+
+#page6 {
+    height: 100%;              /* match .book height */
+    max-height: 500px;         /* limit height to the book's height */
+    overflow-y: auto !important; /* enable vertical scrolling */
+    padding-bottom: 60px;      /* extra bottom space */
+}
+
 #page7 {
     height: 650px; /* increase height */
     padding-bottom: 60px; /* extra space for text */
     overflow-y: auto; /* in case content is still long */
 }
-#page3 {
+#page3 #page4 {
     height: 650px; /* increase height */
     padding-bottom: 60px; /* extra space for text */
     overflow-y: auto; /* in case content is still long */
@@ -79,6 +89,7 @@ body::after {
     perspective: 2000px;
     position: relative;		
     margin-bottom:30px;
+    
 }
 
 .page {
@@ -219,7 +230,7 @@ button:hover {
     
 
     <!-- Page 5 -->
-    <div class="page hidden" id="page5">
+    <div class="page hidden" id="page4">
         <h1>hji patyu nthi vach</h1>
         <p>
             mne noti khbr how to keep people happy hu mari khushi ma tari happiness to bhuli j gyo maro ek frnd jene tu oadkhas yash bf of tanvi tu eno jo ne to akho green flag koi di tanvi ne kai j rok tok n kre and em j keto bhai ene gme em krva devay and i also wanted to be the same but I FAILED me LAST CHANCE magyo hto tya pn me lap kri i didnt knew how to keep a you happy hu tne j sachvi ny sakto to agad jata biji ne su sachvis hve regret thay che but kaam nu su ?? 
@@ -228,7 +239,7 @@ button:hover {
     </div>
 
     <!-- Page 6 -->
-    <div class="page hidden" id="page6">
+    <div class="page hidden" id="page5">
         <h1>hji che kham</h1>
         <p>
            yr aa msg no pachad no e maro khali kay j motive nthi bs mne man thyu etle me kidhu ek surprise apu khbr ny tne gmse ke ny ke ny and i dont want to be a person in your life jene tu just formality mate bolav and me aa kidhu etle tu jarak hurt thai hois but meaning e che ke mne ghanu sikhva malyu ana pr thi tari life ma bija pn person che toy hu badhu mara pr j leto and e rete tne unintentionally control krto like tari life ma bija koi che j ny i am the only one but e j ne badha ke apna uper ave tyare khbr pde me tne ghani hurt kri che but hve ny kru.... and yeah restart is the only the single way left and hu kyay past ny lavu vache but sun ne force nthi krto but jarak time joy che attention joy che once a day ik tu busy cho but still try and mne ADAT NTHI PADTI and you are free to behave like you want hu ny kv ke tu aam kr tem kr like if you love someone than tamare ene dekhadvu pde khali keva thi n thi n chale pls bhavya maaf kri de ek immature childish boy samji ne 👉👈...... and at last i want to say take care of yourself
@@ -236,7 +247,7 @@ button:hover {
         <button onclick="flipPage()">Final Page ➡️</button>
     </div>
 <!-- Page 7 -->
-<div class="page hidden" id="page7">
+<div class="page hidden" id="page6">
     <img src="aaa.jpg" alt="Holding Hands" class="final-img">
     <p style="text-align:center;">and mine toooooo 😂😂🤟</p>
 </div>
